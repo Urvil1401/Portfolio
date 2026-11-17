@@ -1,4 +1,4 @@
-# Urvil Mehta — Portfolio
+# Urvil Mehta · Portfolio
 
 Personal portfolio built with **Next.js (App Router)** + React. Ported from a
 single-file HTML prototype into componentized React with the same pixel/terminal
@@ -23,7 +23,7 @@ npm start
 
 1. Push this folder to a GitHub repo.
 2. Go to [vercel.com/new](https://vercel.com/new), import the repo.
-3. Vercel auto-detects Next.js — no config needed. Click **Deploy**.
+3. Vercel auto-detects Next.js, so no config is needed. Click **Deploy**.
 
 Or from the CLI:
 
