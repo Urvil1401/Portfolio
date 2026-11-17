@@ -25,12 +25,12 @@ const silkscreen = Silkscreen({
 export const metadata = {
   title: "Urvil Mehta · Software Engineer",
   description:
-    "Urvil Mehta — software engineer building AI-powered products end-to-end with Next.js, Node.js, and AWS.",
+    "Urvil Mehta, a software engineer building reliable systems end to end: backend services, APIs, cloud and AI products.",
   openGraph: {
     type: "website",
     title: "Urvil Mehta · Software Engineer",
     description:
-      "Urvil Mehta — software engineer building AI-powered products end-to-end with Next.js, Node.js, and AWS.",
+      "Urvil Mehta, a software engineer building reliable systems end to end: backend services, APIs, cloud and AI products.",
   },
   twitter: {
     card: "summary_large_image",

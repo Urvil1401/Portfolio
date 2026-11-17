@@ -188,8 +188,7 @@ section { padding: 96px 0 0; }
 .cell:hover { border-color: var(--accent); }
 .cell .kind { font-family: var(--font-silk), monospace; font-size: 10px; color: var(--muted); text-transform: uppercase; display: block; margin-bottom: 14px; }
 
-.cell.term { grid-column: span 4; grid-row: span 2; padding: 0; display: flex; flex-direction: column; }
-.cell.heat { grid-column: span 2; }
+.cell.term { grid-column: span 4; padding: 0; display: flex; flex-direction: column; }
 .cell.now  { grid-column: span 2; }
 .cell.stack-cell { grid-column: span 6; }
 
@@ -217,16 +216,6 @@ section { padding: 96px 0 0; }
   caret-color: var(--accent);
 }
 
-/* contribution heat */
-.heat-grid { display: grid; grid-template-columns: repeat(16, 1fr); gap: 3px; }
-.heat-grid i {
-  aspect-ratio: 1; background: var(--line); display: block;
-  transition: transform .1s ease;
-}
-.heat-grid i:hover { transform: scale(1.4); }
-.heat-grid i.l1 { background: color-mix(in srgb, var(--accent) 30%, var(--line)); }
-.heat-grid i.l2 { background: color-mix(in srgb, var(--accent) 60%, var(--line)); }
-.heat-grid i.l3 { background: var(--accent); }
 .cell .foot { font-family: var(--font-mono), monospace; font-size: 11px; color: var(--muted); margin-top: 12px; }
 
 .cell.now .big { font-family: var(--font-mono), monospace; font-size: 15px; }
@@ -405,7 +394,7 @@ body.singularity #blackhole::before { animation-duration: .6s; opacity: 1; }
   .cards { grid-template-columns: 1fr; }
   .stats { grid-template-columns: 1fr 1fr; }
   .bento { grid-template-columns: 1fr; }
-  .cell.term, .cell.heat, .cell.now, .cell.stack-cell { grid-column: span 1; }
+  .cell.term, .cell.now, .cell.stack-cell { grid-column: span 1; }
   .xp-item { grid-template-columns: 1fr; gap: 4px; }
   .xp-item .where { text-align: left; }
 }
