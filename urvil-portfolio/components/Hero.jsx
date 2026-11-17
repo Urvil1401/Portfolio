@@ -19,9 +19,9 @@ export default function Hero() {
         <span className="caret"></span>
       </div>
       <p className="lede reveal">
-        Software engineer building <strong>AI-powered products</strong>{" "}
-        end-to-end — from <strong>system design</strong> to{" "}
-        <strong>pixel-perfect UI</strong> to the boring-but-critical parts
+        Software engineer who designs and ships <strong>reliable systems</strong>{" "}
+        end to end, from <strong>backend services and APIs</strong> to data,
+        cloud and <strong>clean UI</strong>, plus the boring-but-critical parts
         nobody sees.
       </p>
       <div className="actions reveal">

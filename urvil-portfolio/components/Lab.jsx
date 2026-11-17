@@ -5,6 +5,8 @@ import { downloadResume } from "@/lib/resume";
 import { stack } from "@/lib/content";
 
 const PROJECTS_TXT =
+  "uichemy-awc      brief/figma to site    mcp + chatgpt app\n" +
+  "protuno          ai agents for sites    claude, chatgpt, cursor\n" +
   "carbon-blocks    carbon-credit market   web3 payments\n" +
   "project-mgmt     PM + collaboration     react + node\n" +
   "gst-app          ERP tax module         real-time\n" +
@@ -29,17 +31,17 @@ function Terminal() {
         return "downloading Urvil-Mehta-Resume.pdf ...";
       },
       about: () =>
-        "Urvil Mehta. Software engineer at Posimyth, building SproutOS end-to-end. I care about shipping.",
+        "Urvil Mehta. Software engineer at POSIMYTH. I build backend services, APIs and full products, currently UIChemy's AI Website Creator and Protuno. I care about shipping.",
       whoami: () => "visitor (with excellent taste)",
       projects: () => PROJECTS_TXT,
       stack: () =>
-        "TypeScript · React · Next.js · Node.js · Python · Java · PostgreSQL · Redis · Docker · AWS · CI/CD · System Design",
+        "Java · Python · TypeScript · SQL · DSA · OOP · System Design · REST APIs · Spring Boot · Hibernate · Node.js · FastAPI · PostgreSQL · MongoDB · Redis · AWS · Docker · CI/CD · React · Next.js · Angular · LLMs + MCP",
       contact: () =>
         "email: <span class='hl'>urvilmehta1324@gmail.com</span> · github: <span class='hl'>github.com/Urvil1401</span> · linkedin: <span class='hl'>/in/urvil-mehta</span>",
       cat: () =>
         "meow. (she's around here somewhere, follow your cursor)",
       neofetch: () =>
-        "urvil@portfolio\n----------------------\nOS:       urvilOS\nShell:    this one\nUptime:   2+ years of shipping\nStack:    Next.js · Node · AWS\nTheme:    pixel-dark [lime]\nCPU:      chai-powered",
+        "urvil@portfolio\n----------------------\nOS:       urvilOS\nShell:    this one\nUptime:   2+ years of shipping\nStack:    Java · Python · TypeScript\nTheme:    pixel-dark [lime]\nCPU:      chai-powered",
       "sudo hire-me": () =>
         "[sudo] permission granted ✓\nresume sent to printer... just kidding. type <span class='hl'>resume</span> for the real one",
       clear: () => null,
@@ -110,35 +112,6 @@ function Terminal() {
   );
 }
 
-function HeatGrid() {
-  const cells = useMemo(() => {
-    let seed = 7;
-    const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
-    const arr = [];
-    for (let i = 0; i < 112; i++) {
-      const v = rnd();
-      let cls = "";
-      if (v > 0.8) cls = "l3";
-      else if (v > 0.55) cls = "l2";
-      else if (v > 0.3) cls = "l1";
-      arr.push({ cls, title: `${Math.floor(v * 12)} commits` });
-    }
-    return arr;
-  }, []);
-
-  return (
-    <div className="cell heat pixel-cut">
-      <span className="kind">Commit activity</span>
-      <div className="heat-grid">
-        {cells.map((c, i) => (
-          <i key={i} className={c.cls} title={c.title}></i>
-        ))}
-      </div>
-      <div className="foot">last 16 weeks · hover me</div>
-    </div>
-  );
-}
-
 function Now() {
   const [time, setTime] = useState("--:--");
   useEffect(() => {
@@ -158,9 +131,9 @@ function Now() {
     <div className="cell now pixel-cut">
       <span className="kind">Currently</span>
       <div className="big">
-        Building SproutOS
+        Building UIChemy
         <br />
-        &amp; AI website tools
+        &amp; Protuno
       </div>
       <span className="clock">{time}</span>
       <div className="foot">Ahmedabad, IN · UTC+5:30</div>
@@ -174,7 +147,6 @@ export default function Lab() {
       <SectionHead label="The Lab" index="02 / 06" />
       <div className="bento reveal">
         <Terminal />
-        <HeatGrid />
         <Now />
         <div className="cell stack-cell pixel-cut">
           <span className="kind">Stack</span>

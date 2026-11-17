@@ -51,10 +51,13 @@ export default function About() {
           Most engineers pick a lane. <strong>I picked the whole road.</strong>
         </p>
         <p>
-          Right now I&apos;m building <strong>SproutOS</strong> — an AI-powered
-          website builder — end-to-end on Next.js, TypeScript &amp; MongoDB.
-          Along the way I&apos;ve shipped real-time dashboards, ERP modules, and
-          Web3 apps. I care about <strong>shipping</strong>, not just writing
+          Right now I&apos;m building <strong>UIChemy</strong>&apos;s AI
+          Website Creator, which turns a brief, a Figma design or an existing
+          site into a full, editable website, and <strong>Protuno</strong>, AI
+          agents that look after websites, which I built from scratch. I&apos;ve
+          worked across Java, Python and TypeScript: REST APIs, background job
+          pipelines, databases, cloud services, real-time dashboards, ERP
+          modules and Web3 apps. I care about <strong>shipping</strong>, not just writing
           code.
         </p>
       </div>

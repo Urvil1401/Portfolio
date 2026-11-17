@@ -20,7 +20,7 @@ export default function Fun() {
           &quot;I&apos;ll take a potato chip…{" "}
           <span className="accent">and eat it!&quot;</span>
         </blockquote>
-        <cite>— Light Yagami, Death Note</cite>
+        <cite>Light Yagami, Death Note</cite>
         <p className="caption">*me, deploying to prod on a Friday*</p>
       </div>
     </section>
