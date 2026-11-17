@@ -1,4 +1,4 @@
-// Edit your real content here — components read from these arrays.
+// Edit your real content here. Components read from these arrays.
 
 export const social = {
   email: "urvilmehta1324@gmail.com",
@@ -16,49 +16,76 @@ export const stats = [
 ];
 
 export const stack = [
-  "TypeScript",
-  "React / Next.js",
-  "Node.js",
-  "Python",
   "Java",
-  "PostgreSQL",
-  "Redis",
-  "Docker",
-  "AWS",
-  "CI/CD",
+  "Python",
+  "TypeScript",
+  "JavaScript",
+  "SQL",
+  "Data Structures & Algorithms",
+  "OOP",
   "System Design",
+  "REST APIs",
+  "Spring Boot",
+  "Hibernate / JPA",
+  "Node.js",
+  "FastAPI",
+  "PostgreSQL",
+  "MongoDB",
+  "Redis",
+  "AWS",
+  "Docker",
+  "CI/CD",
+  "React / Next.js",
+  "Angular",
+  "LLMs + MCP",
 ];
 
 export const experience = [
   {
     when: "Dec 2025 → Now",
-    company: "Posimyth Innovation",
+    company: "POSIMYTH Innovations",
     current: true,
     role: "Software Engineer",
     where: "Ahmedabad, IN",
-    desc: "Building SproutOS end-to-end — an AI website builder on Next.js 14, TypeScript & MongoDB. Architected the React/Tailwind frontend, Node.js REST APIs, and the prompt-to-website AI flow with MCP-based WordPress automation.",
+    desc: "Built two AI products end to end, from system design and backend services to UI. UIChemy AI Website Creator turns a client brief, PDF, Figma design or existing website into a full, editable multi-page website. I built its Figma import flow, APIs and background processing, and exposed it to AI agents over MCP and inside ChatGPT. Protuno, which I built from scratch, runs AI agents that maintain websites through step-by-step playbooks with backups, approvals and undo. I own its backend, data model, auth, payments, background jobs and integrations with Claude, ChatGPT, Codex, Cursor and other AI apps, plus testing, CI/CD and monitoring.",
   },
   {
     when: "May 2025 → Nov 2025",
     company: "TechEniac Services",
     role: "Junior Software Engineer",
     where: "Ahmedabad, IN",
-    desc: "Built web apps integrating Meta Ads, Google Ads & Analytics APIs. Shipped real-time live-streaming features over WebSockets and dashboards backed by AWS Lambda & S3.",
+    desc: "Built features for client products at international startups. For Dazhboards, an AI platform for tour and travel booking businesses, I built the marketing module, integrating the Meta Ads, Google Ads and Google Analytics APIs into campaign dashboards. Worked on Linkfluencer, a creator marketing platform with live campaign tracking. Shipped real-time live streaming over WebSockets and serverless backend services on AWS Lambda & S3.",
   },
   {
     when: "Jan 2024 → Jul 2024",
     company: "Axelor Technologies",
     role: "SDE Intern",
     where: "Surat, IN",
-    desc: "Helped build a mini-ERP — designed and implemented core modules for contact management, sales, invoicing, dashboards, and accounting.",
+    desc: "Built core modules of a mini-ERP on a Java-based platform, from data model to delivery: contact management, sales, invoicing, accounting and reporting dashboards. Learned to ship production features inside a real product team.",
   },
 ];
 
 export const projects = [
   {
+    kind: "AI · Website Builder",
+    title: "UIChemy AI Website Creator",
+    desc: "From a client brief, PDF, Figma file or existing site to a full multi-page website: sitemap, brand kit, written copy and AI editing, then one-click export as native, editable Elementor or Gutenberg pages. Also usable from AI agents over MCP and in ChatGPT.",
+    metricValue: "Brief, Figma or URL",
+    metricText: "to editable site",
+    href: "https://uichemy.com/ai-website-creator/",
+  },
+  {
+    kind: "SaaS · AI Agents · Built from scratch",
+    title: "Protuno",
+    desc: "AI agents that look after websites: updates, security, speed, SEO, store and email. Every job follows a written playbook, takes a backup first, waits for approval and can be undone.",
+    metricValue: "Claude, ChatGPT, Cursor",
+    metricText: "+ more via MCP",
+    href: "https://protuno.com",
+  },
+  {
     kind: "Web3 · Full Stack",
     title: "Carbon Blocks",
-    desc: "A carbon-credit marketplace with search, bank linking, and full transaction history — payments via Metamask and Razorpay.",
+    desc: "A carbon-credit marketplace with search, bank linking, and full transaction history. Payments via Metamask and Razorpay.",
     metricValue: "Metamask",
     metricText: "+ Razorpay payments",
   },
@@ -89,18 +116,21 @@ export const marqueeItems = [
   "BUILD",
   "SHIP",
   "REPEAT",
+  "JAVA",
+  "PYTHON",
   "TYPESCRIPT",
-  "NEXT.JS",
-  "NODE.JS",
+  "SYSTEM DESIGN",
+  "APIS",
+  "CLOUD",
   "AI",
-  "AWS",
   "OPEN SOURCE",
 ];
 
 export const typerWords = [
   "software engineer",
+  "backend engineer",
   "full-stack developer",
-  "AI app builder",
+  "problem solver",
   "systems thinker",
   "chai-driven developer",
 ];
